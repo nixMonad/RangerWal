@@ -1,7 +1,7 @@
 # RangerWal
 Use ranger to select the background to use with pywal.
 This way you can get a preview of the image before you use it with pywal.
-You can also set your wallpaper folder permanently, by either passing the path as an argument :
+You can also set your wallpaper folder permanently(meaning you don't need to type it againg next time), by either passing the path as an argument :
 ```bash
 	./rangerwal YOURPATH
 ```
