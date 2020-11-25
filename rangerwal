@@ -1,15 +1,20 @@
 #!/bin/bash
 
-if [ $# -eq 0 ] 
+if [ -f "~/.wallpaperpath" ]
 then
-	:
-else
-	if [ -f "~/.wallpaperpath" ]
+	truncate -s 0 ~/.wallpaperpath
+	if [ $# -eq 0 ]
 	then
-		truncate -s 0 ~/.wallpaperpath
-		echo $1 >> ~/.wallpaperpath
+		:
 	else
-		touch ~/.wallpaperpath
+		echo $1 >> ~/.wallpaperpath
+	fi
+else
+	touch ~/.wallpaperpath
+	if [ $# -eq 0 ]
+	then
+		:
+	else
 		echo $1 >> ~/.wallpaperpath
 	fi
 fi
