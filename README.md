@@ -3,7 +3,7 @@ Use ranger to select the background to use with pywal.
 This way you can get a preview of the image before you use it with pywal.
 In order to be able to use this script you can clone it and give it execution permission.
 ```bash
-git clone https://github.com/emadist/RangerWal
+git clone https://github.com/nixMonad/RangerWal
 cd RangerWal
 chmod +x rangerwal
 ```
