@@ -24,3 +24,4 @@ or editing a file called .wallpaperpath in your home directory:
 echo YOURPATH >> .wallpaperpath 
 ```
 just appending the path would be fine since the script uses the last line of .wallpaperpath as the path to use.
+[Example](https://github.com/nixMonad/RangerWal/raw/main/Example.gif)
