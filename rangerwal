@@ -1,6 +1,20 @@
 #!/bin/bash
 
-ranger --choosefile=/tmp/wallpaper
+if [ $# -eq 0 ] 
+then
+	:
+else
+	if [ -f "~/.wallpaperpath" ]
+	then
+		truncate -s 0 ~/.wallpaperpath
+		echo $1 >> ~/.wallpaperpath
+	else
+		touch ~/.wallpaperpath
+		echo $1 >> ~/.wallpaperpath
+	fi
+fi
+
+ranger --choosefile=/tmp/wallpaper $(tail -n1 ~/.wallpaperpath)
 
 file="/tmp/wallpaper"
 if [ -f "$file" ]
