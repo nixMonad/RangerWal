@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ranger --choosefile=/tmp/wallpaper
+
+file="/tmp/wallpaper"
+if [ -f "$file" ]
+then
+        wal -i $(head -n 1 /tmp/wallpaper) -q
+        rm /tmp/wallpaper
+fi
+
