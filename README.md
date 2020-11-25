@@ -11,7 +11,7 @@ and to use it type:
 ```bash
 ./rangerwal
 ```
-If you want to be able to run it from everywhere consider adding the folder the script is in, in your path or simply copy "rangerwal" to /usr/local/bin(note that this will require sudo permission) :
+If you want to be able to run it from everywhere consider adding the folder the script is in, to your path or simply copy "rangerwal" to /usr/local/bin(note that this will require sudo permission) :
 ```bash
 sudo cp rangerwal /usr/local/bin/
 ```
